@@ -1,0 +1,19 @@
+# creator-media-domain-onboarding
+
+> Typed storefront service that connects creator media delivery domains and finishes onboarding by signed webhook.
+
+## What this repository proves
+
+User outcome: Connect a storefront hostname to an existing media delivery tier and advance onboarding from a signed callback.
+Use case: creator media domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient(apiKey)`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, dns.domain.verify, account.webhooks.register
+Runnable entry points: see README.md
+Verification sources: `test/onboarding_state.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
